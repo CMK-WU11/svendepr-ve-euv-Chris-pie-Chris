@@ -11,6 +11,10 @@ export default async function activity({ params }) {
         <div className="w-full">
             <Image src={data.asset.url} width="100" height="100" alt=""/>
             <h1>{data.name}</h1>
+            <p>{data.description}</p>
+            <p>{data.minAge}-{data.maxAge} år</p>
+            <p>{data.weekday}</p>
+            <p>{data.time}</p>
         </div>
     )
 
