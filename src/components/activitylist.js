@@ -1,18 +1,17 @@
-import Link from "next/link"
 import Image from "next/image"
+import Link from "next/link"
 
-export default async function Aktiviteter() {
 
-    // Kode er taget fra Fitness verden terminsopgave og gennemgang af terminsopgaven
-    const response = await fetch("http://localhost:4000/api/v1/activities")
-    const activities = await response.json()
+export default async function ActivityList() {
 
-    console.log(activities)
+        // Kode er taget fra Fitness verden terminsopgave og gennemgang af terminsopgaven
+        const response = await fetch("http://localhost:4000/api/v1/activities")
+        const activities = await response.json()
+    
+        console.log(activities)
 
     return (
-        <div className="bg-[#5E2E53]">
-            <Link href="/Login" className="text-white">Login</Link>
-            <h1 className="text-white">Aktiviteter</h1>
+        <>
             {activities.map((activity, i) => (
                 <Link key={i} href={`/activity/${activity.id}`}>
                     {/* gap mangler, kan ikke få til at fungere */}
@@ -31,6 +30,6 @@ export default async function Aktiviteter() {
                     </article>
                 </Link>
             ))}
-        </div>
+        </>
     )
 }
