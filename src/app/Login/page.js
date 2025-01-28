@@ -1,6 +1,6 @@
 export default function Login() {
     return (
-        <div className="h-32">
+        <div className="h-screen">
         <h1>Log ind</h1>
             <form>
                 <label>

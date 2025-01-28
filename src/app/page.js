@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Link from "next/link";
-// import Velkomst from "../../public/splash-image.jpg"
 
 export default function Home() {
   return (

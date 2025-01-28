@@ -8,7 +8,7 @@ export default async function activity({ params }) {
     const data = await activityResponse.json()
 
     return (
-        <div className="w-full">
+        <div className="h-screen">
             <Image src={data.asset.url} width="100" height="100" alt=""/>
             <h1>{data.name}</h1>
             <p>{data.description}</p>
