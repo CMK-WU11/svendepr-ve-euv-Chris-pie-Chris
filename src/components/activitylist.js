@@ -13,19 +13,19 @@ export default async function ActivityList() {
     return (
         <>
             {activities.map((activity, i) => (
-                <Link key={i} href={`/activity/${activity.id}`}>
+                <Link className="grid gap-4" key={i} href={`/activity/${activity.id}`}>
                     {/* gap mangler, kan ikke få til at fungere */}
-                    <article className="grid gap-2 justify-center h-screen">
-                        <div className="relative items-center">
+                    <article>
+                        <div>
                             <Image 
                                 priority
                                 src={activity.asset.url} 
                                 width="300" 
-                                height="300"
+                                height="100"
                                 alt="{activity.name}"
-                                className="border-l"
+                                className="rounded-md"
                                 />
-                            <h1 className="bg-[#E1A1E9] absolute bg-opacity-50 bottom-0 text-start">{activity.name}</h1>
+                            <h1 className="bg-[#E1A1E9] absolute bg-opacity-50 text-start">{activity.name}</h1>
                         </div>
                     </article>
                 </Link>

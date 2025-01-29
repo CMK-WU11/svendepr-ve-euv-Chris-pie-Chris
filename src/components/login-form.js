@@ -7,7 +7,7 @@ export default function LoginForm() {
     const [formState, formAction] = useActionState(Login)
 
     useEffect(function () {
-        console.log("Der er en fejl", formState)
+        console.log("formState", formState)
     }, [formState])
 
 
@@ -20,17 +20,17 @@ export default function LoginForm() {
                         <span className="">Brugernavn</span>
                         <input type="text" name="username" className="border w-full" />
                     </label>
-                    {/* <span>{formState?.errors?.username?._errors}</span> */}
+                    <span>{formState?.errors?.username?._errors}</span>
                 </div>
                 <div>
                     <label>
                         <span>Password</span>
                         <input type="password" name="password" className="border w-full" />
                     </label>
-                    {/* <span>{formState?.errors?.password?._errors}</span> */}
+                    <span>{formState?.errors?.password?._errors}</span>
                 </div>
                 <button type="submit" className={`text-black font-semibold w-full px-4 py-2 bg-[#5E2E53] w-48 h-10 text-white rounded-md`}>Log ind</button>
-                {/* <span>{formState?.errors}</span> */}
+                <span>{formState?.errors}</span>
             </form>
         </div>
     )
