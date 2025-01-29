@@ -5,11 +5,9 @@ import { redirect } from "next/navigation"
 import z from "zod"
 
 export default async function Login(formState, formData) {
-    const [username] = formData.values()
-    const [password] = formData.values()
-    // const [] = formData.values()
-    
-    console.log("formData", username, password)
+    const username = formData.get('username')
+    const password = formData.get('password')
+    // const [username, password] = formData.values()
 
     const schema = z.object({
         username: z.string().min(1, { message: "Indtast venligst brugernavn"}),
@@ -43,6 +41,8 @@ export default async function Login(formState, formData) {
 		})
 	})
 
+	console.log(response)
+
 	if (response.status === 401) {
 		return {
 			success: false,
@@ -60,7 +60,7 @@ export default async function Login(formState, formData) {
 		cookieStore.set("dance_uid", data.userId, { expires })
 		cookieStore.set("dance_token", data.token, { expires })
 
-		redirect("./Kalender")
+		redirect("/Kalender")
 		
 	} else {
 		console.error("Smut med dig!!", response.statusText)

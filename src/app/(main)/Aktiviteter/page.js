@@ -4,8 +4,6 @@ import ActivityList from "@/components/activitylist"
 
 export default async function Aktiviteter() {
 
-
-
     return (
         <div className="bg-[#5E2E53]">
             <Link href="/Login" className="text-white">Login</Link>

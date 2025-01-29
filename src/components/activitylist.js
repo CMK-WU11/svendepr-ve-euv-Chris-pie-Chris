@@ -15,13 +15,13 @@ export default async function ActivityList() {
             {activities.map((activity, i) => (
                 <Link key={i} href={`/activity/${activity.id}`}>
                     {/* gap mangler, kan ikke få til at fungere */}
-                    <article className="grid gap">
-                        <div className="flex relative items-center">
+                    <article className="grid gap-2 justify-center h-screen">
+                        <div className="relative items-center">
                             <Image 
                                 priority
                                 src={activity.asset.url} 
-                                width={250} 
-                                height={200} 
+                                width="300" 
+                                height="300"
                                 alt="{activity.name}"
                                 className="border-l"
                                 />

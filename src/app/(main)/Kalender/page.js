@@ -1,6 +1,6 @@
 // Taget fra gennemgang af terminsprøve
 import { cookies } from "next/headers";
-// import Link from "next/link";
+import Link from "next/link";
 
 export default async function Kalender() {
     const cookieStore = await cookies()
@@ -17,7 +17,7 @@ export default async function Kalender() {
 
 
     return (
-        <>
+        <div className="h-screen">
             <h1>Kalender</h1>
             <ul>
                 {data.activities.map(item => (
@@ -32,6 +32,6 @@ export default async function Kalender() {
                         </li>
                     ))}
             </ul>
-        </>
+        </div>
     )
 }

@@ -11,13 +11,13 @@ const ActivityList = dynamic(() => import("./activitylist"), {
 })
 
 export default function SearchResults({ activities }) {
-    const { searchText } = useContext(SearchContext)
+    // const { searchText } = useContext(SearchContext)
 
-    const results = activities.filter(function (element) {
-        if (element.name.toLowercase().includes(searchText.toLowercase())) return element
-        if (element.description.toLowercase().includes(searchText.toLowercase())) return element
-        if (element.weekday.toLowercase().includes(searchText.toLowercase())) return element
-    })
+    // const results = activities.filter(function (element) {
+    //     if (element.name.toLowercase().includes(searchText.toLowercase())) return element
+    //     if (element.description.toLowercase().includes(searchText.toLowercase())) return element
+    //     if (element.weekday.toLowercase().includes(searchText.toLowercase())) return element
+    // })
 
     return (
         <>

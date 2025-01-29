@@ -8,12 +8,12 @@ export default async function activity({ params }) {
     const data = await activityResponse.json()
 
     return (
-        <div className="h-screen w-screen">
-            <section className="">
-                <Image className="w-[50%] h-[50%]" src={data.asset.url} width="100" height="100" alt=""/>
-                <h1>{data.name}</h1>
-                <p>{data.description}</p>
+        <div className="h-screen w-screen bg-[#5E2E53]">
+            <section className="text-white">
+                <Image className="w-[100%] h-[50%]" src={data.asset.url} width="100" height="100" alt=""/>
+                <h1 className="text-base">{data.name}</h1>
                 <p>{data.minAge}-{data.maxAge} år</p>
+                <p>{data.description}</p>
                 <p>{data.weekday}</p>
                 <p>{data.time}</p>
             </section>
