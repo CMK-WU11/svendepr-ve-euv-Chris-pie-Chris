@@ -24,7 +24,7 @@ export default async function Kalender() {
             <h1 className="text-l">Kalender</h1>
             <ul>
                 {studentData.activities.map(item => (
-                        <li key={item.createdAt} className="border-b-2 border-dashed">
+                        <li key={item.createdAt} className="border-b-2">
                             <Link href={`/activity/${item.id}`}>
                                 <p className="flex justify-between">
                                     <span>{item.weekday}</span>
