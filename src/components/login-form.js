@@ -13,7 +13,7 @@ export default function LoginForm() {
 
     return (
         <div className="h-screen bg-cover bg-center bg-[url('/splash-image.jpg')] ">
-            <form action={formAction} className="flex flex-col items-center ">
+            <form action={formAction} className="flex flex-col items-center justify-center">
                 <div className="grid p-[10px] items-center ">
                     <label>
                         <h1 className="font-bold text-md text-white">Log ind</h1>

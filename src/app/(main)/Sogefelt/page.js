@@ -1,4 +1,4 @@
-// import ActivityList from "@/components/activitylist";
+import ActivityList from "@/components/activitylist";
 import SearchFunction from "@/components/search-function";
 
 export default async function Søgefelt() {
@@ -6,9 +6,9 @@ export default async function Søgefelt() {
     const activities = await activitiesResponse.json()
 
     return (
-        <div className="h-screen bg-[#5E2E53]">
+        <div className="bg-[#5E2E53]">
         {/* Søgefunktion */}
-        <h1 className="font-bold text-l text-white">Søg</h1>
+        <h1 className="font-bold text-white text-l">Søg</h1>
         <SearchFunction activities={activities} />
         {/* <ActivityList activities={activities} /> */}
         </div>

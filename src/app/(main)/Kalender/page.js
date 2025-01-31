@@ -18,7 +18,7 @@ export default async function Kalender() {
 
     return (
         <div className="h-screen bg-[#5E2E53]">
-            <h1 className="text-l text-white">Kalender</h1>
+            <h1 className="text-l text-white ml-6">Kalender</h1>
             <ul className="m-6">
                 {studentData.activities.map(item => (
                         <li key={item.createdAt} className="bg-white w-[100%] p-2 h-24 rounded-md">

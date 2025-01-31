@@ -28,7 +28,8 @@ React-icons er et React bibliotek med samling af ikoner.
 
 Jeg har valgt at tage mit login komponent, da jeg havde haft mange udfordringer, men endte at jeg kunne logge ind til sidst og derudover også tjekke Kalender siden når man er logget på. Kalender siden kan ikke ses før man er logget ind. 
 
-*Uden at havet stylet så meget. 
+*Uden at havet stylet så meget.
+
 ```javascript
     "use client"
 // Taget fra gennemgang af terminsprøve

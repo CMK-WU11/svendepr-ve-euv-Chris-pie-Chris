@@ -8,18 +8,24 @@ export default async function Aktiviteter() {
     const activities = await activitiesResponse.json()
 
     return (
-        <div className="w-screen bg-[#5E2E53] m-auto">
-            <Link 
-                href="/Login" 
-                style={{color: "black",
-                    backgroundColor: "#EAEAEA",
-                    border: "3px",
-                    width: "8rem",
-                    height: "3rem",
-                    borderRadius: "6px",
-                }}
-            >Login</Link>
+        <div className="w-screen bg-[#5E2E53]">
+            <div className="flex place-content-between mr-2 ml-2">
             <h1 className="text-white text-l">Aktiviteter</h1>
+                <Link 
+                    href="/Login" 
+                    style={{color: "black",
+                        display: "flex",
+                        backgroundColor: "#EAEAEA",
+                        border: "3px",
+                        width: "5rem",
+                        height: "2rem",
+                        borderRadius: "6px",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        marginTop: "1em"
+                    }}
+                >Login</Link>
+            </div>
             <section>
                 {activities.map(element => <ActivityList activities={element} key={element.name}/> )}
                 {/* <ActivityList activities={activities}/> */}

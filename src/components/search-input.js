@@ -9,14 +9,17 @@ export default function SearchInput() {
 
     return (
         <>
-            <label className="flex text-center">
-                <input 
-                    type="search" 
-                    defaultValue={searchText} 
-                    onChange={event => setSearchText(event.target.value)} 
-                    placeholder="" 
-                    className="bg-transparent outline-none bg-[#EAEAEA] bg-opacity-50"
-                    />
+            <label className="flex text-center justify-center items-center">
+                <div className="flex ">
+                    <input 
+                        type="search" 
+                        defaultValue={searchText} 
+                        onChange={event => setSearchText(event.target.value)} 
+                        placeholder="" 
+                        className="bg-[#EAEAEA]"
+                        />
+
+                </div>
                 <LuSearch />
             </label>
         </>

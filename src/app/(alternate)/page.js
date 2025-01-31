@@ -16,6 +16,7 @@ export default function Home() {
                 textAlign: "center",
                 border: "3px",
                 margin: "auto",
+                paddingTop: "12px"
               }}
               >Kom i gang</Link>
           </div>
