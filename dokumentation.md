@@ -74,7 +74,7 @@ export default function LoginForm() {
 
 Jeg har med valgt at tage performance af min søgeside efter nogle udfordringer jeg har haft med søgefunktionen, som blev løst senere henad 
 
-<img src="./public/Lighthouse_screenshot_sogefelt(Performance).png">
+<img src="./public/Lighthouse_Performance_sogefelt.png">
 
 ## Perspektivering
 Jeg valgte at bruge NextJS, da det er bygget ovenover React framework og giver en fordel at lave serverside-rendering. Det har gjort det lidt nemmere efter mappe-baseret routing og givet lidt bedre overblik for struktur.
