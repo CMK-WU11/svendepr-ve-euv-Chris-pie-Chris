@@ -9,7 +9,7 @@ export default function SearchInput() {
 
     return (
         <>
-            <label className="flex text-center justify-center items-center">
+            <label className="flex text-center justify-center">
                 <div className="flex ">
                     <input 
                         type="search" 

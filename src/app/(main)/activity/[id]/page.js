@@ -10,12 +10,19 @@ export default async function activity({ params }) {
     return (
         <div className="h-screen w-screen bg-[#5E2E53]">
             <section className="h-[100%] text-white">
-                <Image className="w-[100%] h-[50%] bg-cover bg-center" src={data.asset.url} width="100" height="100" alt=""/>
-                <h1 className="text-base">{data.name}</h1>
-                <p>{data.minAge}-{data.maxAge} år</p>
-                <p>{data.description}</p>
-                <p>{data.weekday}</p>
-                <p>{data.time}</p>
+                <Image 
+                    className="w-[100%] h-[50%] bg-cover bg-center" 
+                    src={data.asset.url} 
+                    width="100" 
+                    height="100" 
+                    alt=""/>
+                <div className="ml-3">
+                    <h1 className="text-base">{data.name}</h1>
+                    <p>{data.minAge}-{data.maxAge} år</p>
+                    <p>{data.description}</p>
+                    <p>{data.weekday}</p>
+                    <p>{data.time}</p>
+                </div>
             </section>
         </div>
     )

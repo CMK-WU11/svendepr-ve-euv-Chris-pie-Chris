@@ -16,12 +16,17 @@ Link til Kanban board: [ClickUp](https://sharing.clickup.com/9015153140/b/h/4-90
 
 NextJS er et framework i React. Det giver adgang til serverside-rendering, samt fil- og mappe-baseret routing. 
 * Zod
+
 * TailwindCSS
- 
+
+TailwindCSS er et open source CSS framework. Det bliver brugt til at style i. 
+
+[https://tailwindcss.com/](https://tailwindcss.com/)
 
 * React-icons
 
 React-icons er et React bibliotek med samling af ikoner.
+
 [https://react-icons.github.io/react-icons/](https://react-icons.github.io/react-icons/)
 
 ## Kode-eksempel
@@ -72,7 +77,9 @@ export default function LoginForm() {
 
 ## Performance
 
-Jeg har med valgt at tage performance af min søgeside efter nogle udfordringer jeg har haft med søgefunktionen, som blev løst senere henad 
+Jeg har med valgt at tage performance af min søgeside efter nogle udfordringer jeg har haft med søgefunktionen, som blev løst senere henad
+
+** Ændring kan forekomme
 
 <img src="./public/Lighthouse_Performance_sogefelt.png">
 
