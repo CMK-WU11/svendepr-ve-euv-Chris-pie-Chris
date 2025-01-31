@@ -9,13 +9,14 @@ export default function SearchInput() {
 
     return (
         <>
-            <label className="bg-ash p-2 flex has-[:focus]:outline has-[:focus]:outline-blue-500">
+            <label className="flex text-center">
                 <input 
                     type="search" 
                     defaultValue={searchText} 
                     onChange={event => setSearchText(event.target.value)} 
                     placeholder="" 
-                    className="bg-transparent outline-none" />
+                    className="bg-transparent outline-none bg-[#EAEAEA] bg-opacity-50"
+                    />
                 <LuSearch />
             </label>
         </>

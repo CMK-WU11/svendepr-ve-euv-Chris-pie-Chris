@@ -12,24 +12,24 @@ export default function LoginForm() {
 
 
     return (
-        <div className="h-screen bg-cover bg-center bg-[url('/splash-image.jpg')]">
-            <form action={formAction} className="flex flex-col items-center h-screen">
-                <div className="grid p-[10px] m-auto">
+        <div className="h-screen bg-cover bg-center bg-[url('/splash-image.jpg')] ">
+            <form action={formAction} className="flex flex-col items-center ">
+                <div className="grid p-[10px] items-center ">
                     <label>
-                        <h1 className="font-bold text-md">Log ind</h1>
+                        <h1 className="font-bold text-md text-white">Log ind</h1>
                         <span className="flex flex-col"></span>
                         <input type="text" name="username" placeholder="brugernavn" className="w-[100%] h-12 p-2 text-base" />
                     </label>
                     <span>{formState?.errors?.username?._errors}</span>
                 </div>
-                <div className="grid">
+                <div className="grid gap-2">
                     <label>
                         <span className="flex flex-col"></span>
                         <input type="password" name="password" placeholder="password" className="w-[100%] h-12 p-2 text-base" />
                     </label>
                     <span>{formState?.errors?.password?._errors}</span>
+                    <button type="submit" className={`text-black font-semibold w-full px-4 py-2 bg-[#5E2E53] w-[40%] h-10 text-white rounded-md`}>Log ind</button>
                 </div>
-                <button type="submit" className={`text-black font-semibold w-full px-4 py-2 bg-[#5E2E53] w-[40%] h-10 text-white rounded-md`}>Log ind</button>
                 <span>{formState?.errors}</span>
             </form>
         </div>

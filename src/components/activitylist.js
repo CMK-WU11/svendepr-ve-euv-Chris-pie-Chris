@@ -10,10 +10,14 @@ export default function ActivityList( {activities} ) {
 
     return (
         <>
-                {/* gap mangler, kan ikke få til at fungere */}
-                <article>
-                <Link className="grid gap-12" href={`/activity/${activities.id}`}>
-                    <div>
+            <article className="">
+                <Link 
+                    href={`/activity/${activities.id}`}
+                    style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        position: "relative",
+                    }}>
                         <Image 
                             priority
                             src={activities.asset.url} 
@@ -22,8 +26,7 @@ export default function ActivityList( {activities} ) {
                             alt="billede"
                             className="rounded-md"
                             />
-                        <h1 className="bg-[#E1A1E9] absolute bg-opacity-50 text-start">{activities.name}</h1>
-                    </div>
+                        <div className="bg-[#E1A1E9] absolute bg-opacity-75 bottom-1 left-10 w-[50%] h-12 p-2">{activities.name}</div>
                 </Link>
                 </article>
         </>

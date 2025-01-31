@@ -16,21 +16,18 @@ export default async function Kalender() {
 
 	const studentData = await studentResponse.json()
 
-
-
-
     return (
         <div className="h-screen bg-[#5E2E53]">
-            <h1 className="text-l">Kalender</h1>
-            <ul>
+            <h1 className="text-l text-white">Kalender</h1>
+            <ul className="m-6">
                 {studentData.activities.map(item => (
-                        <li key={item.createdAt} className="border-b-2">
+                        <li key={item.createdAt} className="bg-white w-[100%] p-2 h-24 rounded-md">
                             <Link href={`/activity/${item.id}`}>
-                                <p className="flex justify-between">
-                                    <span>{item.weekday}</span>
-                                    <span>{item.time}</span>
-                                </p>
-                                <h2>{item.name}</h2>
+                                <div className="flex flex-col justify-between">
+                                    <h2 className="text-md">{item.name}</h2>
+                                    <span className="text-base">{item.weekday} {item.time}</span>
+                                    <span></span>
+                                </div>
                             </Link>
                         </li>
                     ))}
