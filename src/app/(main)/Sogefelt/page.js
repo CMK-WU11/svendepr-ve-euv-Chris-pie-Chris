@@ -6,7 +6,7 @@ export default async function Søgefelt() {
     const activities = await activitiesResponse.json()
 
     return (
-        <div className="bg-[##5E2E53]">
+        <div className="h-screen bg-[##5E2E53]">
         {/* Søgefunktion */}
         <h1 className="font-bold">Søg</h1>
         <SearchFunction activities={activities} />
